@@ -8,9 +8,9 @@ dependencies:
   '@monaco-editor/react':
     specifier: ^4.6.0
     version: 4.6.0(monaco-editor@0.46.0)(react-dom@18.2.0)(react@18.2.0)
-  antlr4ts:
-    specifier: 0.5.0-alpha.4
-    version: 0.5.0-alpha.4
+  antlr4ng:
+    specifier: ^2.0.11
+    version: 2.0.11(antlr4ng-cli@1.0.7)
   monaco-sql-languages:
     specifier: 0.12.0-beta.10
     version: 0.12.0-beta.10(monaco-editor@0.46.0)
@@ -37,9 +37,9 @@ devDependencies:
   '@vitejs/plugin-react-swc':
     specifier: ^3.5.0
     version: 3.6.0(vite@5.1.3)
-  antlr4ts-cli:
-    specifier: 0.5.0-alpha.4
-    version: 0.5.0-alpha.4
+  antlr4ng-cli:
+    specifier: ^1.0.7
+    version: 1.0.7
   eslint:
     specifier: ^8.56.0
     version: 8.56.0
@@ -819,10 +819,17 @@ packages:
       antlr4ts: 0.5.0-alpha.4
     dev: false
 
-  /antlr4ts-cli@0.5.0-alpha.4:
-    resolution: {integrity: sha512-lVPVBTA2CVHRYILSKilL6Jd4hAumhSZZWA7UbQNQrmaSSj7dPmmYaN4bOmZG79cOy0lS00i4LY68JZZjZMWVrw==}
+  /antlr4ng-cli@1.0.7:
+    resolution: {integrity: sha512-qN2FsDBmLvsQcA5CWTrPz8I8gNXeS1fgXBBhI78VyxBSBV/EJgqy8ks6IDTC9jyugpl40csCQ4sL5K4i2YZ/2w==}
     hasBin: true
-    dev: true
+
+  /antlr4ng@2.0.11(antlr4ng-cli@1.0.7):
+    resolution: {integrity: sha512-9jM91VVtHSqHkAHQsXHaoaiewFETMvUTI1/tXvwTiFw4f7zke3IGlwEyoKN9NS0FqIwDKFvUNW2e1cKPniTkVQ==}
+    peerDependencies:
+      antlr4ng-cli: 1.0.7
+    dependencies:
+      antlr4ng-cli: 1.0.7
+    dev: false
 
   /antlr4ts@0.5.0-alpha.4:
     resolution: {integrity: sha512-WPQDt1B74OfPv/IMS2ekXAKkTZIHl88uMetg6q3OTqgFxZ/dxDXI0EWLyZid/1Pe6hTftyg5N7gel5wNAGxXyQ==}

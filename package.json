@@ -8,10 +8,11 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "antlr4": "antlr4ng -Dlanguage=TypeScript -o ./src/trino -visitor -listener ./TrinoSQL.g4"
+    "antlr4": "antlr4ng -Dlanguage=TypeScript -o ./src/trino -visitor -listener ./TrinoParser.g4 ./TrinoLexer.g4"
   },
   "dependencies": {
     "@monaco-editor/react": "^4.6.0",
+    "antlr4-c3": "^3.3.7",
     "antlr4ng": "^2.0.11",
     "monaco-sql-languages": "0.12.0-beta.10",
     "react": "^18.2.0",

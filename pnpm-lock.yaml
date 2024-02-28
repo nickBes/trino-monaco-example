@@ -8,6 +8,9 @@ dependencies:
   '@monaco-editor/react':
     specifier: ^4.6.0
     version: 4.6.0(monaco-editor@0.46.0)(react-dom@18.2.0)(react@18.2.0)
+  antlr4-c3:
+    specifier: ^3.3.7
+    version: 3.3.7(antlr4ng-cli@1.0.7)
   antlr4ng:
     specifier: ^2.0.11
     version: 2.0.11(antlr4ng-cli@1.0.7)
@@ -817,6 +820,14 @@ packages:
     resolution: {integrity: sha512-S7DixV12kxWexTkQYGvooCgHYU5AjF74oYio+ZNgm0XN3EzxDY3J6Si9GprQ4KksvgWwK//EgZnL/26WB+bOpw==}
     dependencies:
       antlr4ts: 0.5.0-alpha.4
+    dev: false
+
+  /antlr4-c3@3.3.7(antlr4ng-cli@1.0.7):
+    resolution: {integrity: sha512-F3ndE38wwA6z6AjUbL3heSdEGl4TxulGDPf9xB0/IY4dbRHWBh6XNaqFwur8vHKQk9FS5yNABHeg2wqlqIYO0w==}
+    dependencies:
+      antlr4ng: 2.0.11(antlr4ng-cli@1.0.7)
+    transitivePeerDependencies:
+      - antlr4ng-cli
     dev: false
 
   /antlr4ng-cli@1.0.7:
